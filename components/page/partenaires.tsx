@@ -41,7 +41,6 @@ export default function Partenaires() {
 
   return (
     <div className="w-full bg-gray-100 py-16 overflow-hidden">
-      <h2 className="text-center text-3xl font-bold mb-12">Nos Partenaires</h2>
 
       <div className="flex justify-center">
         <div
