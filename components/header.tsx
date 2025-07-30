@@ -12,9 +12,6 @@ import {
   Instagram,
   Twitter,
   Linkedin,
-  Watch,
-  WatchIcon,
-  LucideWatch,
   Clock,
   Download,
 } from "lucide-react";
@@ -36,6 +33,15 @@ export function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Brochure_PMC.jpeg"; // Assurez-vous que ce fichier existe dans le dossier public
+    link.download = "brochure-prevent-care-medical.jpg";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const navItems = [
     { name: "Accueil", href: "/" },
@@ -172,7 +178,10 @@ export function Header() {
 
             {/* Brochure */}
             <div className="flex items-center group">
-              <Link href="#" className="flex items-center">
+              <button
+                onClick={handleDownload}
+                className="flex items-center cursor-pointer"
+              >
                 <Download
                   className="text-green-800 mr-2 group-hover:text-green-600 group-hover:animate-pulse transition-all"
                   size={50}
@@ -183,7 +192,7 @@ export function Header() {
                     Télécharger
                   </p>
                 </div>
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -243,13 +252,18 @@ export function Header() {
                       </span>
                     </div>
                     <div className="flex items-center group">
-                      <Download
-                        className="text-green-800 mr-2 group-hover:animate-pulse"
-                        size={20}
-                      />
-                      <span className="group-hover:translate-x-1 transition-transform">
-                        Télécharger Notre Brochure
-                      </span>
+                      <button
+                        onClick={handleDownload}
+                        className="flex items-center"
+                      >
+                        <Download
+                          className="text-green-800 mr-2 group-hover:animate-pulse"
+                          size={20}
+                        />
+                        <span className="group-hover:translate-x-1 transition-transform">
+                          Télécharger Notre Brochure
+                        </span>
+                      </button>
                     </div>
                   </div>
                 </div>
