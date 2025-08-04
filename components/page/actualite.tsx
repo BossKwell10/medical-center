@@ -31,55 +31,16 @@ export function ActualitesPage() {
       link: "/sous_actualite/infos1",
     },
     {
-      title: "Visite médicale annuelle à l'ANAC",
+      title: "Sensibilisation sur l'utilisation de MILDA",
       description: "Actualités",
-      date: "07 Fév 2024",
-      tag: "Visite",
-      image:
-        "https://emr.ci/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-25-at-11.15.40-7-wpp1724299897220-440x267.jpeg",
-      link: "#",
-    },
-    {
-      title:
-        "Médecine du travail : Notre participation au 3ème Congrès Scientifique à Grand-Bassam",
-      description: "Actualités",
-      date: "14 Fév 2024",
-      tag: "Événement",
-      image:
-        "https://emr.ci/wp-content/uploads/2024/02/IMG-20240214-WA0064-440x267.jpg",
-      link: "#",
-    },
-    {
-      title: "Médecine du travail : Interventions en entreprise",
-      description: "Médiathèque",
-      date: "07 Fév 2024",
-      tag: "Intervention",
-      image:
-        "https://emr.ci/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-28-at-10.22.54-440x297.jpeg",
-      link: "#",
-    },
-    {
-      title:
-        "Participation de l'Espace Médical la Rotonde au 3ème Congrès Scientifique de la SMIT",
-      description: "Actualités",
-      date: "07 Fév 2024",
-      tag: "Événement",
-      image:
-        "https://emr.ci/wp-content/uploads/2024/02/IMG-20240214-WA0064-440x267.jpg",
-      link: "#",
-    },
-    {
-      title: "Visite annuelle chez JAMIA",
-      description: "Actualités",
-      date: "14 Fév 2024",
-      tag: "Visite",
-      image:
-        "https://emr.ci/wp-content/uploads/2024/10/WhatsApp-Image-2024-09-17-at-12.09.34-wpp1730115313275-440x267.jpeg",
-      link: "#",
-    },
+      date: "04 Mar 2025",
+      tag: "Sensibilisation",
+      image: "/actuality/milda/Moustique-1.jpg",
+      link: "/sous_actualite/milda",
+    }
   ];
 
-  // Données des prestations (categuories)
+  // Données des prestations (categories)
   const prestations = [
     {
       name: "ACTUALITÉS",
@@ -102,16 +63,10 @@ export function ActualitesPage() {
         "https://emr.ci/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-25-at-11.15.40-7-wpp1724299897220-440x297.jpeg",
     },
     {
-      title: "Visites annuelles chez JAMA",
-      date: "23 Sept 2024",
+      title: "Journee mondiale de lutte contre le paludisme",
+      date: "04 Mar 2025",
       image:
-        "https://emr.ci/wp-content/uploads/2024/03/medical-team-440x297.jpg",
-    },
-    {
-      title: "Visites médicales annuelles à l'ANAC",
-      date: "31 Jan 2024",
-      image:
-        "https://emr.ci/wp-content/uploads/2024/02/worker-health-check-440x297.jpg",
+        "/actuality/milda/Moustique-1.jpg",
     },
   ];
 
@@ -235,7 +190,7 @@ export function ActualitesPage() {
 
           {/* Sidebar */}
           <div className="w-full md:w-1/3 space-y-8">
-            {/* Section Catégories &  Prestations */}
+            {/* Section Catégories & Prestations */}
             <div className="bg-white p-6 rounded-lg shadow-sm border">
               <h3 className="font-bold text-xl mb-6 text-blue-800">
                 CATÉGORIES
@@ -320,9 +275,13 @@ export function ActualitesPage() {
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <h3 className="font-bold text-xl mb-6 text-blue-800">TAGS</h3>
+              <h3 className="font-bold text-xl mb-3 text-blue-800">TAGS</h3>
+              <div className="flex flex-row text-center text-white m-2 text-sm">
+                <div className="basis-64 rounded-xl bg-indigo-200 me-2">Sensibilisation</div>
+                <div className="basis-64 rounded-xl bg-indigo-200">Formations</div>
+              </div>
               <div className="space-y-4">
-                <div className="flex-shrink-0  overflow-hidden rounded-lg">
+              <div className="flex-shrink-0  overflow-hidden rounded-lg">
                   <img
                     src="https://emr.ci/wp-content/uploads/2018/10/african-american-team-working-checkup-reports-hospital-reception-desk-analyzing-patients-appointments-papers-doctor-receptionist-using-medical-forms-help-people-with-disease-scaled-770x480.jpg"
                     alt="Tag Image"

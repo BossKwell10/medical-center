@@ -8,7 +8,7 @@ export function About() {
             <div className="relative">
               <div className="rounded-lg overflow-hidden">
                 <img
-                  src="/propos.jpeg?height=400&width=600"
+                  src="/about/Directeur.jpg?height=400&width=600"
                   alt="Medical center"
                   className="w-full h-auto object-cover"
                 />

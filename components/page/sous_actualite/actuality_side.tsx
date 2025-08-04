@@ -10,20 +10,6 @@ type RelatedPost = {
 };
 
 const relatedPosts: RelatedPost[] = [
-  {
-    title: "Visites annuelles chez JUMIA",
-    date: "Juin 15, 2024",
-    image:
-      "https://emr.ci/wp-content/uploads/2024/10/WhatsApp-Image-2024-09-17-at-12.09.34-wpp1730115313275-440x267.jpeg",
-    link: "#",
-  },
-  {
-    title: "Visites médicales à l’ANAC",
-    date: "Juin 28, 2024",
-    image:
-      "https://emr.ci/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-25-at-11.15.40-7-wpp1724299897220-440x267.jpeg",
-    link: "#",
-  },
 ];
 
 export default function RelatedPosts() {

@@ -21,32 +21,12 @@ export function News() {
     // Données des actualités
     const newsItems = [
         {
-            title: "Médecine du travail : Interventions en entreprise",
-            description: "Médiatèque",
+            title: "JOURNEE MONDIALE DE LUTTE CONTRE LE PALIDISME : Sensibilisation sur l'utilisation de MILDA",
+            description: "Actualités",
             date: "15 Mars 2024",
             readTime: "5 min de lecture",
             image:
-                "https://emr.ci/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-28-at-10.22.54-440x297.jpeg",
-        },
-        {
-            title:
-                "Médecine du travail : Interventions en entreprise\n" +
-                "  Participation du cabinet Prevent Care Medical au 3ème Congrès Scientifique de la SMIT",
-            description: "Actualités",
-            date: "28 Février 2024",
-            readTime: "8 min de lecture",
-            image:
-                "https://emr.ci/wp-content/uploads/2024/10/WhatsApp-Image-2024-09-17-at-12.09.34-wpp1730115313275-440x297.jpeg",
-        },
-        {
-            title:
-                " Participation du Cabinet Prevent Care Medical au 3ème Congrès Scientifique de la SMIT\n" +
-                "  Formation aux gestes de premiers secours",
-            description: "Actualités, Médiatèques",
-            date: "10 Février 2024",
-            readTime: "3 min de lecture",
-            image:
-                "https://emr.ci/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-25-at-11.15.40-7-wpp1724299897220-440x297.jpeg",
+                "/actuality/milda/Moustique-1.jpg?height=440&width=297",
         },
     ];
 

@@ -2,17 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Calendar } from "lucide-react";
+import { Calendar,  Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import Lightbox from "react-image-lightbox";
-import {
-  Mail,
-  Globe,
-  Headphones,
-  Facebook,
-  Instagram,
-  Twitter,
-  Linkedin,
-} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
